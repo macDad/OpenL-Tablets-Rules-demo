@@ -1,0 +1,16 @@
+RULE	PERSON
+ applyRules(person: Person) : Person                                         	
+ WHEN                                                                      	
+   person.age < 30                                                         	
+ THEN                                                                      	
+   person.discount = 20                                          	
+                                                                           	
+ WHEN                                                                      	
+   person.age < 50                                    	
+ THEN                                                                      	
+   person.discountPercentage = 25                                          	
+                                                                           	
+ WHEN                                                                      	
+   person.age >= 50                                                        	
+ THEN                                                                      	
+   person.isSenior = true                                             	
